@@ -1,0 +1,28 @@
+# Expression / condition labels for the D405 recorder.
+#
+# EDIT THIS FILE for your experiment, then restart the recorder.
+# One label per line. Lines starting with # and blank lines are ignored.
+# Order matters: line 1 is hotkey 1, line 2 is hotkey 2, ... (max 9 hotkeys).
+#
+# Keep "unlabeled" first. Frames left unlabeled are still recorded and still
+# land in the dataset, but are excluded from supervised training by default
+# (they remain available for self-supervised pretraining).
+#
+# Always include a "neutral" / baseline label and record ~1 s of it at the
+# start of every session: build_dataset.py uses that period as the session
+# reference for depth normalization and as the neutral face for "deform" mode.
+#
+# --- example sets ---------------------------------------------------------
+# Head-fixed rodent affective states (Dolensek et al. 2020 style):
+#   neutral  sucrose  quinine  tail_shock  air_puff  lithium_malaise  escape
+# Human posed expressions:
+#   neutral  happy  sad  surprise  fear  anger  disgust
+# Facial actions:
+#   neutral  eye_closure  nose_bulge  ear_back  jaw_open  whisker_protraction
+# -------------------------------------------------------------------------
+
+unlabeled
+neutral
+condition_1
+condition_2
+condition_3

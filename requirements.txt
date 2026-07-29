@@ -1,0 +1,9 @@
+# Recording + dataset building (everything except training/inference)
+pyrealsense2>=2.55
+opencv-python>=4.8
+numpy>=1.24
+
+# Training and live inference also need PyTorch. It is NOT listed here because
+# the right build depends on your GPU; install it separately:
+#   CPU:            pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   NVIDIA (CUDA):  pip install torch --index-url https://download.pytorch.org/whl/cu124
